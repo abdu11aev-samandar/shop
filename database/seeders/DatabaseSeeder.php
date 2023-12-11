@@ -19,7 +19,6 @@ class DatabaseSeeder extends Seeder
         //    ->create();
 
         Address::factory()
-            ->count(50)
             ->create();
     }
 }
