@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "f5fba0c5ebefd8d8e14cc955aaae7f5b",
     "packages": [
         {
             "name": "brick/math",
@@ -1044,6 +1044,308 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "juststeveking/http-status-code",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/http-status-code.git",
+                "reference": "b3fa778faf48ab1ce3a12d3951cef213a498b6af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/http-status-code/zipball/b3fa778faf48ab1ce3a12d3951cef213a498b6af",
+                "reference": "b3fa778faf48ab1ce3a12d3951cef213a498b6af",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "thecodingmachine/phpstan-safe-rule": "^1.0",
+                "vimeo/psalm": "^3.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\StatusCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://www.juststeveking.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple class to return correct status codes for http responses",
+            "support": {
+                "issues": "https://github.com/JustSteveKing/http-status-code/issues",
+                "source": "https://github.com/JustSteveKing/http-status-code/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-03T10:24:14+00:00"
+        },
+        {
+            "name": "juststeveking/laravel-postcodes",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                "reference": "72d344e3337bcde5c8fc3438be6331974e33ac8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/72d344e3337bcde5c8fc3438be6331974e33ac8f",
+                "reference": "72d344e3337bcde5c8fc3438be6331974e33ac8f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "illuminate/support": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": "~7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^8.0",
+                "phpunit/phpunit": ">=7.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "JustSteveKing\\LaravelPostcodes\\PostcodesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Postcode": "JustSteveKing\\LaravelPostcodes\\Facades\\Postcode"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\LaravelPostcodes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://github.com/JustSteveKing",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A service wrapper around postcodes.io",
+            "homepage": "https://github.com/JustSteveKing/LaravelPostcodes",
+            "keywords": [
+                "JustSteveKing",
+                "LaravelPostcodes"
+            ],
+            "support": {
+                "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/3.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-22T13:21:59+00:00"
+        },
+        {
+            "name": "juststeveking/laravel-transporter",
+            "version": "2.0.01",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                "reference": "453c61454d8286dad5c2d27ded92b68abf8a3217"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/453c61454d8286dad5c2d27ded92b68abf8a3217",
+                "reference": "453c61454d8286dad5c2d27ded92b68abf8a3217",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "juststeveking/http-status-code": "^2.0",
+                "juststeveking/uri-builder": "^2.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^6.9",
+                "guzzlehttp/guzzle": "^7.5",
+                "nunomaduro/collision": "^6.4",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^1.22.4",
+                "phpstan/phpstan": "^1.9.17",
+                "phpunit/phpunit": "^9.6.3",
+                "spatie/laravel-ray": "^1.32.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JustSteveKing\\Transporter\\TransporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\Transporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://www.juststeveking.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Transporter is a futuristic way to send API requests in PHP. This is an OOP approach to handle API requests.",
+            "homepage": "https://github.com/JustSteveKing/laravel-transporter",
+            "keywords": [
+                "JustSteveKing",
+                "laravel",
+                "transporter"
+            ],
+            "support": {
+                "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                "source": "https://github.com/JustSteveKing/laravel-transporter/tree/2.0.01"
+            },
+            "time": "2023-08-25T08:47:17+00:00"
+        },
+        {
+            "name": "juststeveking/parameterbag",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/ParameterBag.git",
+                "reference": "41376ac6dfde99a14018f6112ca6e0d3b8432437"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/ParameterBag/zipball/41376ac6dfde99a14018f6112ca6e0d3b8432437",
+                "reference": "41376ac6dfde99a14018f6112ca6e0d3b8432437",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.8",
+                "vimeo/psalm": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\ParameterBag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststeveking@gmail.com",
+                    "homepage": "https://www.juststeveking.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A flexible parameter bag in place of standard arrays on PHP classes",
+            "support": {
+                "issues": "https://github.com/JustSteveKing/ParameterBag/issues",
+                "source": "https://github.com/JustSteveKing/ParameterBag/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-08T19:32:10+00:00"
+        },
+        {
+            "name": "juststeveking/uri-builder",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/uri-builder.git",
+                "reference": "278ba4d0705bee4a4193484f5659e3f373831ebf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/278ba4d0705bee4a4193484f5659e3f373831ebf",
+                "reference": "278ba4d0705bee4a4193484f5659e3f373831ebf",
+                "shasum": ""
+            },
+            "require": {
+                "juststeveking/parameterbag": "^2.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.8",
+                "roave/security-advisories": "dev-latest",
+                "vimeo/psalm": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\UriBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://www.juststeveking.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple URI builder in PHP that is slightly opinionated",
+            "support": {
+                "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                "source": "https://github.com/JustSteveKing/uri-builder/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-08T20:56:19+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3182,6 +3484,66 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "cc7c991555a37f9fa6b814aa03af73f88026a83d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/cc7c991555a37f9fa6b814aa03af73f88026a83d",
+                "reference": "cc7c991555a37f9fa6b814aa03af73f88026a83d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-23T09:04:39+00:00"
         },
         {
             "name": "symfony/console",
