@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Domains\Customer\Models\Address;
 use Domains\Customer\Models\Location;
 use Domains\Customer\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -15,5 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         //Location::factory(50)->create();
+        Address::factory()->create();
     }
 }

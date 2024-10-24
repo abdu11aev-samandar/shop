@@ -26,13 +26,13 @@ class Location extends Model
         'country',
     ];
 
-    protected static function newFactory(): Factory
-    {
-        return new LocationFactory();
-    }
-
     public function addresses(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Address::class);
+    }
+
+    protected static function newFactory(): Factory
+    {
+        return new LocationFactory();
     }
 }

@@ -2,6 +2,8 @@
 
 namespace Domains\Customer\Models;
 
+use Database\Factories\AddressFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -29,5 +31,10 @@ class Address extends Model
     public function location(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Location::class);
+    }
+
+    protected static function newFactory(): Factory
+    {
+        return new AddressFactory();
     }
 }
