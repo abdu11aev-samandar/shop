@@ -3,9 +3,12 @@
 namespace Domains\Catalog\Models;
 
 use Database\Factories\RangeFactory;
+use Domains\Catalog\Models\Builders\RangeBuilder;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Range extends Model
 {
@@ -24,6 +27,18 @@ class Range extends Model
     protected $casts = [
         'active' => 'boolean',
     ];
+
+    public function newEloquentBuilder($query): Builder
+    {
+        return new RangeBuilder(
+            $query
+        );
+    }
+
+    public function products(): HasMany
+    {
+        return $this->hasMany(Product::class, 'range_id');
+    }
 
     protected static function newFactory(): Factory
     {
