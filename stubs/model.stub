@@ -4,6 +4,7 @@ namespace {{ namespace }};
 
 {{ factoryImport }}
 use Database\Factories\{{ class }}Factory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 
 class {{ class }} extends Model
