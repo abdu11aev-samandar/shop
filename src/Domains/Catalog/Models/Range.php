@@ -4,6 +4,7 @@ namespace Domains\Catalog\Models;
 
 use Database\Factories\RangeFactory;
 use Domains\Catalog\Models\Builders\RangeBuilder;
+use Domains\Shared\Models\Concerns\HasKey;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -14,6 +15,7 @@ class Range extends Model
 {
     /** @use HasFactory<\Database\Factories\RangeFactory> */
     use HasFactory;
+    use HasKey;
 
     public $timestamps = false;
 

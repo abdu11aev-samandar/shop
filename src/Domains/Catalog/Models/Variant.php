@@ -5,16 +5,19 @@ namespace Domains\Catalog\Models;
 use Database\Factories\VariantFactory;
 use Domains\Catalog\Models\Builders\VariantBuilder;
 use Domains\Shared\Models\Builders\Shared\HasActiveScope;
+use Domains\Shared\Models\Concerns\HasKey;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Variant extends Model
 {
     /** @use HasFactory<\Database\Factories\VariantFactory> */
     use HasFactory;
     use HasActiveScope;
+    use HasKey;
 
     protected $fillable = [
         'key',
@@ -41,6 +44,11 @@ class Variant extends Model
         'active'    => 'boolean',
         'shippable' => 'boolean',
     ];
+
+    public function product(): BelongsTo
+    {
+        return $this->belongsTo(Product::class, 'product_id');
+    }
 
     protected static function newFactory(): Factory
     {

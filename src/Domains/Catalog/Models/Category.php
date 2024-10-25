@@ -4,6 +4,7 @@ namespace Domains\Catalog\Models;
 
 use Database\Factories\CategoryFactory;
 use Domains\Catalog\Models\Builders\CategoryBuilder;
+use Domains\Shared\Models\Concerns\HasKey;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -14,6 +15,7 @@ class Category extends Model
 {
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory;
+    use HasKey;
 
     public $timestamps = false;
 
