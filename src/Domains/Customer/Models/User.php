@@ -75,6 +75,11 @@ class User extends Authenticatable
         return $this->hasOne(Cart::class, 'user_id');
     }
 
+    public function orders(): HasMany
+    {
+        return $this->hasMany(Order::class, 'user_id');
+    }
+
     protected static function newFactory(): Factory
     {
         return new UserFactory();
