@@ -13,8 +13,8 @@ return new class extends Migration
             $table->string('label');
             $table->boolean('billing')->default(false);
 
-            $table->foreignId('user_id')->index()->constrained()->nullOnDelete();
-            $table->foreignId('location_id')->index()->constrained()->nullOnDelete();
+            $table->foreignId('user_id')->nullable()->index()->constrained()->nullOnDelete();
+            $table->foreignId('location_id')->nullable()->index()->constrained()->nullOnDelete();
 
             $table->timestamps();
         });
