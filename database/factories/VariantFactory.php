@@ -25,7 +25,6 @@ class VariantFactory extends Factory
         $shippable = $this->faker->boolean();
 
         return [
-            'key'        => $this->faker->unique()->word(),
             'name'       => $this->faker->words(3, true),
             'cost'       => $cost,
             'retail'     => ($product->cost === $cost) ? $product->retail : ($product->retail + $this->faker->numberBetween(100, 7500)),

@@ -12,6 +12,8 @@
         "laravel/framework": "^11.9",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
+        "spatie/enum": "^3.13",
+        "spatie/laravel-enum": "^3.1",
         "spatie/laravel-query-builder": "^6.2"
     },
     "require-dev": {

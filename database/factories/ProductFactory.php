@@ -24,7 +24,6 @@ class ProductFactory extends Factory
         $cost = $this->faker->numberBetween(100, 1000);
 
         return [
-            'key'         => $this->faker->unique()->slug(2),
             'name'        => $this->faker->words(4, true),
             'description' => $this->faker->paragraphs(2, true),
             'cost'        => $cost,
