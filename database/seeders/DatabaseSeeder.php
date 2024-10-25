@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use Domains\Catalog\Models\Category;
+use Domains\Catalog\Models\Range;
 use Domains\Customer\Models\Address;
 use Domains\Customer\Models\Location;
 use Domains\Customer\Models\User;
@@ -17,5 +19,7 @@ class DatabaseSeeder extends Seeder
     {
         //Location::factory(50)->create();
         Address::factory()->create();
+        Category::factory(10)->create();
+        Range::factory(10)->create();
     }
 }
