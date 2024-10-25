@@ -20,8 +20,8 @@ class CategoryFactory extends Factory
     {
         return [
             'key' => $this->faker->unique()->word,
-            'name'        => $this->faker->word(3, true),
-            'description' => $this->faker->paragraph(4, true),
+            'name'        => $this->faker->words(3, true),
+            'description' => $this->faker->paragraphs(4, true),
             'active'      => true,
         ];
     }

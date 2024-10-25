@@ -3,9 +3,23 @@
 namespace {{ namespace }};
 
 {{ factoryImport }}
+use Database\Factories\{{ class }}Factory;
 use Illuminate\Database\Eloquent\Model;
 
 class {{ class }} extends Model
 {
     {{ factory }}
+
+    protected $fillable = [
+        // Add your fillable fields here
+    ];
+
+     protected $casts = [
+        // Add your casts here
+    ];
+
+     protected static function newFactory(): Factory
+    {
+        return new {{ class }}Factory();
+    }
 }
