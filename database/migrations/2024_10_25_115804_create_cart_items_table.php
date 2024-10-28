@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('key')->unique();
 
+            $table->unsignedInteger('quantity');
             $table->morphs('purchaseable');
 
             $table->foreignId('cart_id')->index()->nullable()->constrained()->nullOnDelete();
