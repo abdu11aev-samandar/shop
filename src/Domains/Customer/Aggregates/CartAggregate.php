@@ -2,6 +2,7 @@
 
 namespace Domains\Customer\Aggregates;
 
+use Domains\Customer\Events\CouponWasApplied;
 use Domains\Customer\Events\IncreaseCartQuantity;
 use Domains\Customer\Events\ProductWasAddedCart;
 use Domains\Customer\Events\ProductWasRemovedFromCart;
@@ -55,6 +56,18 @@ class CartAggregate extends AggregateRoot
                 cartID:     $cartID,
                 cartItemID: $cartItemID,
                 quantity:   $quantity
+            )
+        );
+
+        return $this;
+    }
+
+    public function applyCoupon(int $cartID, string $code): self
+    {
+        $this->recordThat(
+            new CouponWasApplied(
+                cartID: $cartID,
+                code:   $code
             )
         );
 

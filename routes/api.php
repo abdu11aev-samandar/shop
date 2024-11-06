@@ -35,4 +35,6 @@ Route::prefix('cart')->as('carts:')->group(function () {
     Route::patch('{cart:uuid}/products/{cartItem:uuid}', App\Http\Controllers\Api\V1\Carts\Products\UpdateController::class)->name('products:update');
 
     Route::delete('{cart:uuid}/products/{cartItem:uuid}', App\Http\Controllers\Api\V1\Carts\Products\DeleteController::class)->name('products:destroy');
+
+    Route::post('{cart:uuid}/coupon', App\Http\Controllers\Api\V1\Carts\Coupons\StoreController::class)->name('coupon:store');
 });
