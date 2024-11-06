@@ -25,7 +25,7 @@ class CartItem extends Model
     ];
 
     protected $casts = [
-        // Add your casts here
+        'quantity' => 'integer',
     ];
 
     public function cart(): BelongsTo

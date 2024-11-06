@@ -18,6 +18,7 @@ class CartProjector extends Projector
         $cart = Cart::query()->find($event->cartID);
 
         $cart->items()->create([
+                                   'quantity'          => 1,
                                    'purchaseable_id'   => $event->purchasableID,
                                    'purchaseable_type' => $event->type,
                                ]);
